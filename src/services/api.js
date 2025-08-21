@@ -39,6 +39,10 @@ export const getMovieDetails = async (movieId) => {
   const response = await api.get(`/movie/${movieId}`)
   return response.data
 }
+export const getTvDetails = async (seriesId) => {
+  const response = await api.get(`/tv/${seriesId}`)
+  return response.data
+}
 
 export const getPopularMovies = async (page = 1) => {
   const response = await api.get('/movie/popular',{

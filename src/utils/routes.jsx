@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
       { path: "top-rated-movies", element: <TopRatedMovies /> },
       { path: "tv", element: <TV /> },
       { path: "top-rated-tv", element: <TopRatedTV /> },
-      { path: "movie/:id", element: <MovieDetail /> },
+      { path: ":type/:id", element: <MovieDetail /> },
       { path: "search", element: <Search /> },
       { path: "*", element: <NotFound /> }
     ]
