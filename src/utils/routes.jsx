@@ -8,18 +8,22 @@ import TopRatedTV from "../pages/TopRatedTV/TopRatedTV";
 import MovieDetail from "../pages/MovieDetail/MovieDetail";
 import Search from "../pages/Search/Search";
 import Layout from "../pages/Layout";
+import NotFound from "../pages/NotFound/NotFound";
 
-
-export const router=createBrowserRouter([
-{
-    path:"/",element: <Layout />,children:[
-        {index:true,element:<Home/>},
-        {path:"movies",element:<Movies />},
-        {path:"trending-tv",element:<TrendingTV/>},
-        {path:"top-rated-movies",element:<TopRatedMovies/>},
-        {path:"tv",element:<TV/>},
-        {path:"top-rated-tv",element:<TopRatedTV/>},
-        {path:"movie/:id",element:<MovieDetail/>},
-        {path:"search",element:<Search/>},
-    ]}
-])
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "movies", element: <Movies /> },
+      { path: "trending-tv", element: <TrendingTV /> },
+      { path: "top-rated-movies", element: <TopRatedMovies /> },
+      { path: "tv", element: <TV /> },
+      { path: "top-rated-tv", element: <TopRatedTV /> },
+      { path: "movie/:id", element: <MovieDetail /> },
+      { path: "search", element: <Search /> },
+      { path: "*", element: <NotFound /> }
+    ]
+  }
+]);
