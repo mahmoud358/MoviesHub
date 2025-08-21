@@ -1,0 +1,30 @@
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  transition: transform 0.3s;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef4444 !important;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #ef4444 !important;
+}
